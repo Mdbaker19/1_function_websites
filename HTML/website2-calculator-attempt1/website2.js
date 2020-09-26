@@ -1,19 +1,19 @@
 window.onload = function calcNums () {
-    var num1 = document.getElementById("firstNum");
-    var num2 = document.getElementById("secondNum");
-    var answer = document.getElementById("calculate");
-    var response = document.getElementById("totalOfNums");
+    var addNum1 = document.getElementById("firstNum");
+    var addNum2 = document.getElementById("secondNum");
+    var addAnswer = document.getElementById("calculate");
+    var addResponse = document.getElementById("totalOfNums");
 
 
-    answer.addEventListener("click", function add () {
-        var num1Value = parseInt(num1.value);
-        var num2Value = parseInt(num2.value);
-        if(num1.value.length < 1 || num2.value.length < 1) {
+    addAnswer.addEventListener("click", function add () {
+        var num1Value = parseFloat(addNum1.value);
+        var num2Value = parseFloat(addNum2.value);
+        if(addNum1.value.length < 1 || addNum2.value.length < 1) {
             alert("enter a number into both boxes please");
     } else
     {
         var sumOfNums = (num1Value + num2Value);
-        response.innerText = sumOfNums;
+        addResponse.innerText = sumOfNums;
     }
     });
 
@@ -23,8 +23,8 @@ window.onload = function calcNums () {
     var subResponse = document.getElementById("differenceOfNums");
 
     subAnswer.addEventListener("click", function sub() {
-        var num1Value = parseInt(subNum1.value);
-        var num2Value = parseInt(subNum2.value);
+        var num1Value = parseFloat(subNum1.value);
+        var num2Value = parseFloat(subNum2.value);
         if(subNum1.value.length < 1 || subNum2.value.length < 1) {
             alert("enter a number into both boxes please");
         } else {
