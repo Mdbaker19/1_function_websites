@@ -1,0 +1,28 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.countdown-container{
+    text-align: center;
+}
+
+.big-text{
+    font-size: 22px;
+    margin: 0 2rem;
+    color: floralwhite;
+}
+
+.amount{
+    text-align: center;
+    font-size: 1.5rem;
+    color: yellowgreen;
+}
