@@ -18,3 +18,13 @@ h1 {
 .answer{
     color: antiquewhite;
 }
+
+.button1{
+    background-color: #b5ad7a;
+    color: black;
+}
+
+.button1:hover{
+    background-color: #d0b81f;
+    cursor: pointer;
+}

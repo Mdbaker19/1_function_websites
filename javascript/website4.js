@@ -25,10 +25,14 @@ function countDown() {
         daysEl.innerHTML = days;
         hoursEl.innerHTML = hours;
         minutesEl.innerHTML = minutes;
-        secondsEl.innerHTML = secondsLeft;
+        secondsEl.innerHTML = addedZero(secondsLeft);
    // });
 }
-
+function addedZero(time){
+    if(time < 10) {
+        return `0${time}`;
+    } else return time;
+}
 countDown();
 
 //every second
