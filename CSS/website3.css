@@ -8,3 +8,17 @@ h1{
     text-decoration: underline;
     color: darkred;
 }
+
+h3{
+}
+
+span {
+    margin: 20px;
+}
+
+button:hover{
+    color: white;
+    transition: 0.5s color;
+    background-color: #d0b81f;
+    cursor: pointer;
+}
