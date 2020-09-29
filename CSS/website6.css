@@ -1,0 +1,39 @@
+* {
+    align-items: center;
+}
+
+body {
+    background-color: #333333;
+}
+
+#clickNumContainer{
+    border: 2px floralwhite dotted;
+    width: 100px;
+    height: 100px;
+}
+
+#clickNum{
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+#clicks{
+    transition: .5s;
+    font-size: 12px;
+    background-color: blueviolet;
+    color: #d0b81f;
+}
+
+button {
+    border-radius: 25%;
+}
+
+
+button:hover{
+    transition: .5s font-size;
+    font-size: 25px;
+    color: blueviolet;
+    background-color: #d0b81f;
+    cursor: pointer;
+}
