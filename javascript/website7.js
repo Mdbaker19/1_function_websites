@@ -1,5 +1,17 @@
 (function() {
 
+    var playerScore = document.getElementById("p1score");
+    var compScore = document.getElementById("computerscore");
+
+    var p1Points = Number(playerScore);
+    var compPoints = Number(compScore);
+
+    var showPlayerScore = document.getElementById("player1scorespot");
+    var showComputerScore = document.getElementById("computerscorespot");
+
+    showPlayerScore.innerText = p1Points;
+    showComputerScore.innerText = compPoints;
+
     var canvas;
 
     var canvasContext;
@@ -91,7 +103,9 @@
                 //reverse ball speed to negative
                 //not needed anymore
                 //ballSpeedX = -ballSpeedX;
+                p1Points++;
                 ballReset();
+                console.log(p1Points);
         }
         //hitting player side
         if(ballX <= 0){
@@ -103,7 +117,9 @@
                 //already negative so reverse it again
                 //not needed anymore
                 //ballSpeedX = -ballSpeedX;
+                compPoints++;
                 ballReset();
+                console.log(compPoints);
         } if (ballY > canvas.height){
             //reverse if over height
             ballSpeedY = -ballSpeedY;
