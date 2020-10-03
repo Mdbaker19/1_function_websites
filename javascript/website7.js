@@ -71,14 +71,16 @@
         switch(direction) {
             case 'Up':
                 paddle1Y -= 20;
-
                 break;
             case 'Down':
                 paddle1Y += 20;
-
                 break;
         }
     }
+
+
+
+
 
     function ballReset(){
         //taken from previous use to reset direction after reset
@@ -88,46 +90,42 @@
     }
 
 
+
+
+
     function moveEverything(){
-        //now will move by 15 33 ish times a second
-        ballX = ballX + ballSpeedX;
-        // now will move by 5 33 ish times a second
-        ballY = ballY + ballSpeedY;
+        ballX += ballSpeedX;
+        ballY += ballSpeedY;
 
-        //hitting right side
-        if(ballX > canvas.width) {
-            if(ballY > paddle2Y && ballY < paddle2Y+PADDLE_HEIGHT){
-                ballSpeedX = -ballSpeedX;
-
-            } else
-                //reverse ball speed to negative
-                //not needed anymore
-                //ballSpeedX = -ballSpeedX;
-                p1Points++;
-                ballReset();
-                console.log(p1Points);
+        //hitting computer paddle
+        if (ballY > paddle2Y && ballY < paddle2Y + PADDLE_HEIGHT && ballX === 765) {
+            ballSpeedX = -ballSpeedX;
+        } else if(ballX > canvas.width){
+            ballReset();
         }
-        //hitting player side
-        if(ballX <= 0){
-            //if below top of paddle && above bottom of paddle
-            if(ballY > paddle1Y && ballY < paddle1Y+PADDLE_HEIGHT){
-                ballSpeedX = -ballSpeedX;
 
-            } else
-                //already negative so reverse it again
-                //not needed anymore
-                //ballSpeedX = -ballSpeedX;
-                compPoints++;
-                ballReset();
-                console.log(compPoints);
-        } if (ballY > canvas.height){
-            //reverse if over height
+        //hitting player paddle
+        if (ballY > paddle1Y && ballY < paddle1Y + PADDLE_HEIGHT && ballX === 10) {
+            ballSpeedX = -ballSpeedX;
+        } else if(ballX <= 0){
+            ballReset();
+        }
+
+        //hitting bottom end
+        if(ballY > canvas.height){
             ballSpeedY = -ballSpeedY;
-        } if(ballY <= 0){
-            //reverse if under height
+        }
+
+        //hitting top end
+        if(ballY <= 0){
             ballSpeedY = -ballSpeedY;
         }
     }
+
+
+
+
+
 
 
     function aiComputer(){
