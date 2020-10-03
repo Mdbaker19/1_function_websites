@@ -6,3 +6,4 @@ Practice making very basic websites
 4: countdown to graduation
 5: nothing yet(in progress for snake)
 6: mouse click counter and doubler
+7: pong game(in progress)
