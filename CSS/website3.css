@@ -1,6 +1,9 @@
 body {
     background-color:lightblue;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1{
@@ -10,6 +13,8 @@ h1{
 }
 
 h3{
+    display: inherit;
+    color: #00e1ff
 }
 
 span {
@@ -21,4 +26,39 @@ button:hover{
     transition: 0.5s color;
     background-color: #d0b81f;
     cursor: pointer;
+}
+
+#generator{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.background_image {
+    background-image: url(../images/math_background.jpeg);
+    height: 50vh;
+    width: 50vw;
+    background-size: cover;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-color{
+    color: #00e1ff;
+}
+
+.text-background{
+    border: 1px solid black;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.adjust-text-background{
+    width: 13%;
+    margin: auto;
 }
