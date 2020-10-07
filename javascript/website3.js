@@ -17,7 +17,7 @@ window.onload = function generateNums () {
         firstNum.innerText = one;
         operator.innerText = operators[randomOpNum];
         secondNum.innerText = two;
-        inputAnswer.innerHTML = "";// does not clear the text box;
+        inputAnswer.innerText = "";// does not clear the text box;
 
         checkAnswer.addEventListener("click", function verifyAnswer() {
             let total;
