@@ -1,66 +1,4 @@
 window.onload = function calcNums () {
-
-//     var addAnswer = document.getElementById("calculate");//the button
-//
-//     var addResponse = document.getElementById("totalOfNums");//the blank text to replace
-//
-//
-//     //when the button is clicked
-//     addAnswer.addEventListener("click", function add () {
-//
-//         //change the ----- text
-//         addResponse.innerText = 1;
-//     });
-
-//
-// window.onload = function changeText(){
-//
-//     var textReplace = document.getElementById("calculateTheSum");//the button
-//
-//     var addResponse = document.getElementById("textSpot")//the blank text ----
-//
-//     //when i click the button
-//     textReplace.addEventListener("click", function text () {//it is named text because it changes text
-//
-//         addResponse.innerText = 1;//change the ---- to a number 1
-//     });
-//
-// };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var addNum1 = document.getElementById("firstNum");//input of first num text box
     var addNum2 = document.getElementById("secondNum");// input of second num text box
     var addAnswer = document.getElementById("calculate");//the button
@@ -78,13 +16,6 @@ window.onload = function calcNums () {
         addResponse.innerText = sumOfNums;
         }
     });
-
-
-
-
-
-
-
 
     var subNum1 = document.getElementById("firstSubNum");
     var subNum2 = document.getElementById("secondSubNum");
