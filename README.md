@@ -4,6 +4,6 @@ Practice making very basic websites
 2: math calculations
 3: math test site
 4: countdown to graduation
-5: nothing yet(in progress for snake)
+5: nothing yet(in progress for snake) will be done in game creations
 6: mouse click counter and doubler
-7: pong game(in progress)
+7: pong game(in progress) done in game creations
