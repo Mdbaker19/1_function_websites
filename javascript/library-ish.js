@@ -36,6 +36,21 @@
         }
     }]
 
+    const search = document.getElementById("keyword");
+    let output = document.getElementById("result");
+
+    function searchBooks(input){
+        books.forEach((book) => {
+            if(input === book.title){
+                console.log(book);
+                output.innerText = book.title;
+            }
+            else {console.log("do not have that book")}
+        })
+    }
+
+    searchBooks(search);
+
 
 
 })();
