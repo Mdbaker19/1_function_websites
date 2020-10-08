@@ -1,0 +1,9 @@
+body{
+    background-image: url("../images/library.jpeg");
+    height: 100%;
+}
+
+.website {
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
