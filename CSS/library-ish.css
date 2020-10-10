@@ -6,4 +6,12 @@ body{
 .website {
     /*display: flex;*/
     /*justify-content: center;*/
+    color: floralwhite;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 25%;
+    background-color: black;
+    color: floralwhite;
 }

@@ -36,20 +36,22 @@
         }
     }]
 
-    const search = document.getElementById("keyword");
+    const bookData = document.getElementById("keyword");
     let output = document.getElementById("result");
+    let checkStock = document.getElementById("searchBooks");
 
-    function searchBooks(input){
+    checkStock.addEventListener("click", function search(){
         books.forEach((book) => {
-            if(input === book.title){
-                console.log(book);
-                output.innerText = book.title;
+            if(bookData.value === book.title){
+                output.innerText = book.author.firstName
             }
-            else {console.log("do not have that book")}
-        })
-    }
+            else{
+                output.innerText = "sorry, we do not have that book";
+            }
+        });
+    });
 
-    searchBooks(search);
+
 
 
 
