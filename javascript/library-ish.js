@@ -42,8 +42,8 @@
 
     checkStock.addEventListener("click", function search(){
         books.forEach((book) => {
-            if(bookData.value === book.title){
-                output.innerText = book.author.firstName
+            if(/*bookData.value === book.title*/5>2){
+                output.innerText = books[0].title
             }
             else{
                 output.innerText = "sorry, we do not have that book";
