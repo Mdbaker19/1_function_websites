@@ -8,38 +8,40 @@
     <title>myCalc</title>
     <link rel="stylesheet" href="../CSS/myCalc.css">
 </head>
-<body>
+<body class="main">
 <h1>Calculator</h1>
 <div class="calculatorBody">
     <div class="screen">
         <p id="savedInput">__  __ __</p>
         <p id="input"></p>
     </div>
-    <div id="one-ten-buttons">
-        <button type="button" id="num9">9</button>
-        <button type="button" id="num8">8</button>
-        <button type="button" id="num7">7</button><br>
-        <button type="button" id="num6">6</button>
-        <button type="button" id="num5">5</button>
-        <button type="button" id="num4">4</button><br>
-        <button type="button" id="num3">3</button>
-        <button type="button" id="num2">2</button>
-        <button type="button" id="num1">1</button><br>
-        <button type="button" id="num0">0</button>
-    </div>
-    <div id="operations">
-        <button type="button" id="add">+</button>
-        <button type="button" id="subtract">-</button>
-        <button type="button" id="multiply">*</button>
-        <button type="button" id="divide">/</button>
-        <button type="button" id="equals">=</button>
-        <button type="button" id="parenthesis">(</button>
-        <button type="button" id="parenClose">)</button>
-        <button type="button" id="decimal">.</button>
-    </div>
-    <div class="clear">
-        <button type="button" id="clearScreen">C</button>
-        <button type="button" id="delete"><img src="../images/calcBack.webp" width="15" height="15"></button>
+    <div class="buttons">
+        <div id="one-ten-buttons">
+            <button type="button" id="num9">9</button>
+            <button type="button" id="num8">8</button>
+            <button type="button" id="num7">7</button><br>
+            <button type="button" id="num6">6</button>
+            <button type="button" id="num5">5</button>
+            <button type="button" id="num4">4</button><br>
+            <button type="button" id="num3">3</button>
+            <button type="button" id="num2">2</button>
+            <button type="button" id="num1">1</button><br>
+            <button type="button" id="num0">0</button>
+        </div>
+        <div id="operations">
+            <button type="button" id="add">+</button>
+            <button type="button" id="subtract">-</button>
+            <button type="button" id="multiply">*</button>
+            <button type="button" id="divide">/</button>
+            <button type="button" id="equals">=</button>
+            <button type="button" id="parenthesis">(</button>
+            <button type="button" id="parenClose">)</button>
+            <button type="button" id="decimal">.</button>
+        </div>
+        <div class="clear">
+            <button type="button" id="clearScreen">C</button>
+            <button type="button" id="delete"><img src="../images/calcBack.webp" width="15" height="15"></button>
+        </div>
     </div>
 </div>
 <script src="../javascript/myCalc.js"></script>

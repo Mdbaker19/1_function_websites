@@ -36,13 +36,16 @@
        }
        if(subtract){
            collect.innerHTML = (Number(collect.innerHTML)) - (Number(screen.innerHTML));
-           screen.innerHTML = "";       }
+           screen.innerHTML = "";
+       }
        if(multiply){
            collect.innerHTML = (Number(collect.innerHTML)) * (Number(screen.innerHTML));
-           screen.innerHTML = "";       }
+           screen.innerHTML = "";
+       }
        if(divide){
            collect.innerHTML = (Number(collect.innerHTML)) / (Number(screen.innerHTML));
-           screen.innerHTML = "";       }
+           screen.innerHTML = "";
+       }
     });
     paren.addEventListener("click", function addParen(){
        screen.innerHTML += "(";
