@@ -82,6 +82,7 @@
         screen.innerHTML += ".";
     });
     back.addEventListener("click", function dele(){
+        screen.innerHTML = (screen.innerHTML).toString();
         screen.innerHTML -= screen.innerHTML[screen.innerHTML.length-1];
     });
     zero.addEventListener("click", function fill(){
