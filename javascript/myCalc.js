@@ -1,4 +1,5 @@
 (function (){
+    // backspace and parenthesis
     const zero = document.getElementById("num0");
     const one = document.getElementById("num1");
     const two = document.getElementById("num2");
@@ -54,8 +55,8 @@
         screen.innerHTML += ")";
     });
     clear.addEventListener("click", function clearScreen(){
-       screen.innerHTML = "";
-       collect.innerHTML = "";
+       screen.innerHTML = "0";
+       collect.innerHTML = "0";
     });
     opAdd.addEventListener("click", function addNum(){
         collect.innerHTML = screen.innerHTML;
