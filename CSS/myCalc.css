@@ -1,0 +1,26 @@
+body{
+    background-image: url("../images/circuit.jpeg");
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+}
+.calculatorBody{
+    text-align: center;
+}
+.screen{
+    color: aliceblue;
+}
+button{
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+    font-size: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: .8s;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
