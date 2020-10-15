@@ -1,5 +1,4 @@
 (function (){
-    window.onload = function startClicks () {
         var clickCount = document.getElementById("clicks");
         var numDisplay = document.getElementById("clickNum");
         var double = document.getElementById("doubler");
@@ -14,5 +13,4 @@
             count *= 2;
             numDisplay.innerText = count;
         })
-    }
 })();
