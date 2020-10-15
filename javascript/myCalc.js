@@ -1,5 +1,4 @@
 (function (){
-    // backspace and parenthesis
     const zero = document.getElementById("num0");
     const one = document.getElementById("num1");
     const two = document.getElementById("num2");
@@ -21,61 +20,55 @@
     let divide = false;
     const opTotal = document.getElementById("equals");
 
-    const paren = document.getElementById("parenthesis");
-    const parenC = document.getElementById("parenClose");
     const decimal = document.getElementById("decimal");
     const clear = document.getElementById("clearScreen");
     const back = document.getElementById("delete");
 
     const screen = document.getElementById("input");
+    const newScreen = screen.innerHTML;
     const collect = document.getElementById("savedInput");
+    const newCollect = collect.innerHTML;
 
     opTotal.addEventListener("click", function equals(){
        if(add){
            collect.innerHTML = (Number(collect.innerHTML)) + (Number(screen.innerHTML));
-           screen.innerHTML = "";
+           screen.innerHTML = newScreen;
        }
        if(subtract){
            collect.innerHTML = (Number(collect.innerHTML)) - (Number(screen.innerHTML));
-           screen.innerHTML = "";
+           screen.innerHTML = newScreen;
        }
        if(multiply){
            collect.innerHTML = (Number(collect.innerHTML)) * (Number(screen.innerHTML));
-           screen.innerHTML = "";
+           screen.innerHTML = newScreen;
        }
        if(divide){
            collect.innerHTML = (Number(collect.innerHTML)) / (Number(screen.innerHTML));
-           screen.innerHTML = "";
+           screen.innerHTML = newScreen;
        }
     });
-    paren.addEventListener("click", function addParen(){
-       screen.innerHTML += "(";
-    });
-    parenC.addEventListener("click", function closeParen(){
-        screen.innerHTML += ")";
-    });
     clear.addEventListener("click", function clearScreen(){
-       screen.innerHTML = "0";
-       collect.innerHTML = "0";
+       screen.innerHTML = newScreen;
+       collect.innerHTML = newCollect;
     });
     opAdd.addEventListener("click", function addNum(){
         collect.innerHTML = screen.innerHTML;
-        screen.innerHTML = "";
+        screen.innerHTML = newScreen;
         add = true;
     });
     opSub.addEventListener("click", function subNum(){
         collect.innerHTML = screen.innerHTML;
-        screen.innerHTML = "";
+        screen.innerHTML = newScreen;
         subtract = true;
     });
     opPro.addEventListener("click", function multNum(){
         collect.innerHTML = screen.innerHTML;
-        screen.innerHTML = "";
+        screen.innerHTML = newScreen;
         multiply = true;
     });
     opQuo.addEventListener("click", function divNum(){
         collect.innerHTML = screen.innerHTML;
-        screen.innerHTML = "";
+        screen.innerHTML = newScreen;
         divide = true;
     });
     decimal.addEventListener("click", function fill(){
@@ -83,7 +76,7 @@
     });
     back.addEventListener("click", function dele(){
         screen.innerHTML = (screen.innerHTML).toString();
-        screen.innerHTML -= screen.innerHTML[screen.innerHTML.length-1];
+        screen.innerHTML = Number(screen.innerHTML.substring(0,screen.innerHTML.length-1));
     });
     zero.addEventListener("click", function fill(){
        screen.innerHTML += 0;
