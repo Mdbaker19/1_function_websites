@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Try to make an HEB online checkout look alike</title>
+    <link rel="stylesheet" href="../CSS/HEB-like.css">
+</head>
+<body>
+    <header class="topOfSite" id="top">
+        <button id="logIn">Log in</button><span> or </span><button id="register">Register</button>
+        <button id="lists">Lists</button><button id="help">Help</button>
+    </header>
+    <div class="upperSection">
+        <div class="search">
+            <button id="goHome"><img src="../images/hebLogo.png" width="100" height="50"></button>
+            <input id="search" type="text" placeholder="Search">
+            <button id="deleteSearch">X</button>
+            <button id="performSearch"><img src="../images/magnifyGlass.jpg" width="13" height="13"></button>
+        </div>
+        <div class="curbWindow">
+            <select id="timeFrame">
+                <option value="1">one o'clock</option>
+                <option value="2">two o'clock</option>
+                <option value="3">three o'clock</option>
+                <option value="4">four o'clock</option>
+                <option value="5">five o'clock</option>
+            </select>
+        </div>
+        <div class="cart">
+            <button id="cartTotal"><img src="../images/cart.jpg" width="40" height="25">Total:<span id="yourTotal">$0.00</span></button>
+        </div>
+    </div><hr>
+    <main class="mainBodyOfSite">
+        <div class="displaySearchText">
+            <p id="whatYouSearched">.</p>
+        </div>
+        <div class="items">
+            <div id="item1">
+                <p id="itemName1">Rice</p><br>
+                <img src="../images/hebRice.jpg" width="75" height="75">
+                <p id="cost1">2.99</p>
+                <button id="add1" class="addItem">Add to Cart</button>
+            </div>
+            <div id="item2">
+                <p id="itemName2">Bread</p><br>
+                <img src="../images/hebBread.png" width="75" height="75">
+                <p id="cost2">4.99</p>
+                <button id="add2" class="addItem">Add to Cart</button>
+            </div>
+            <div id="item3">
+                <p id="itemName3">Chicken</p><br>
+                <img src="../images/hebChicken.jpg" width="75" height="75">
+                <p id="cost3">6.99</p>
+                <button id="add3" class="addItem">Add to Cart</button>
+            </div>
+            <div id="item4">
+                <p id="itemName4">Water</p><br>
+                <img src="../images/hebWater.jpg" width="75" height="75">
+                <p id="cost4">2.99</p>
+                <button id="add4" class="addItem">Add to Cart</button>
+            </div>
+            <div id="item5">
+                <p id="itemName5">Chocolate</p><br>
+                <img src="../images/hebChocolate.jpg" width="75" height="75">
+                <p id="cost5">.99</p>
+                <button id="add5" class="addItem">Add to Cart</button>
+            </div>
+        </div>
+        <div class="displayOfCart">
+            <p class="cartItems">Cart: <span id="allItems">- -</span></p>
+        </div>
+    </main>
+    <footer class="bottomOfPage">
+        <div id="info">
+            <p>We are a store</p>
+            <p>Shop now</p>
+            <p><button id="signup">Sign up</button> for offers</p>
+            <p><a href="#top">Go to top</a> </p>
+        </div>
+    </footer>
+<script src="../javascript/HEB-like.js"></script>
+</body>
+</html>

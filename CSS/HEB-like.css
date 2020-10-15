@@ -1,0 +1,57 @@
+body {
+    background-color: aliceblue;
+}
+.topOfSite{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+button:hover{
+    cursor: pointer;
+}
+.upperSection{
+    display: flex;
+    justify-content: center;
+}
+.displaySearchText{
+    text-align: center;
+}
+.bottomOfPage{
+    background-color: #5b405a;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 50%;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.addItem{
+    border: 2px solid red;
+    border-radius: 25%;
+    color: red;
+    background-color: aliceblue;
+    transition-duration: .5s;
+}
+.addItem:hover{
+    color: aliceblue;
+    background-color: red;
+    border: 2px solid yellow;
+}
+#item1{
+    margin: 2%;
+}
+#item2{
+    margin: 2%;
+}
+#item3{
+    margin: 2%;
+}
+#item4{
+    margin: 2%;
+}
+#item5{
+    margin: 2%;
+}
