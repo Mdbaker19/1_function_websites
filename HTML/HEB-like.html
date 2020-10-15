@@ -30,7 +30,7 @@
             </select>
         </div>
         <div class="cart">
-            <button id="cartTotal"><img src="../images/cart.jpg" width="40" height="25">Total:<span id="yourTotal">$0.00</span></button>
+            <button id="cartTotal"><img src="../images/cart.jpg" width="40" height="25">Total:<span id="yourTotal">0</span></button>
         </div>
     </div><hr>
     <main class="mainBodyOfSite">
@@ -41,36 +41,45 @@
             <div id="item1">
                 <p id="itemName1">Rice</p><br>
                 <img src="../images/hebRice.jpg" width="75" height="75">
-                <p id="cost1">2.99</p>
+                <span id="cost1">2.99</span>
                 <button id="add1" class="addItem">Add to Cart</button>
             </div>
             <div id="item2">
                 <p id="itemName2">Bread</p><br>
                 <img src="../images/hebBread.png" width="75" height="75">
-                <p id="cost2">4.99</p>
+                <span id="cost2">4.99</span>
                 <button id="add2" class="addItem">Add to Cart</button>
             </div>
             <div id="item3">
                 <p id="itemName3">Chicken</p><br>
                 <img src="../images/hebChicken.jpg" width="75" height="75">
-                <p id="cost3">6.99</p>
+                <span id="cost3">6.99</span>
                 <button id="add3" class="addItem">Add to Cart</button>
             </div>
             <div id="item4">
                 <p id="itemName4">Water</p><br>
                 <img src="../images/hebWater.jpg" width="75" height="75">
-                <p id="cost4">2.99</p>
+                <span id="cost4">2.99</span>
                 <button id="add4" class="addItem">Add to Cart</button>
             </div>
             <div id="item5">
                 <p id="itemName5">Chocolate</p><br>
                 <img src="../images/hebChocolate.jpg" width="75" height="75">
-                <p id="cost5">.99</p>
+                <span id="cost5">.99</span>
                 <button id="add5" class="addItem">Add to Cart</button>
             </div>
         </div>
         <div class="displayOfCart">
             <p class="cartItems">Cart: <span id="allItems">- -</span></p>
+            <button id="showCart">Show item count</button>
+        </div>
+        <div class="showSiteActions">
+            <p id="whatYouHaveDone">You have:
+            <span id="loggedIn">- -</span><br>
+            <span id="registered">- -</span><br>
+            <span id="clickedList">- -</span><br>
+            <span id="askHelp">- -</span>
+            </p>
         </div>
     </main>
     <footer class="bottomOfPage">
