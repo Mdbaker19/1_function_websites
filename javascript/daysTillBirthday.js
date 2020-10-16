@@ -8,9 +8,9 @@
         console.log(today);
         const birthday = new Date(whenBDay.value);//showing it is 7pm of the day before the day you entered
         console.log(birthday);
-        console.log(birthday - today);
-        let totalTimeTill = Math.round(birthday - today)/1000;//gives you total amount of time in seconds
-        console.log(totalTimeTill);
+        console.log(birthday - today + " total time in milli seconds");//determine the amount of time difference in milli seconds
+        let totalTimeTill = Math.round(birthday - today)/1000;//gives you total amount of time in seconds from milli seconds
+        console.log(totalTimeTill + " in seconds");
         let secondsTill = Math.floor(totalTimeTill%60);// want to find however many seconds can not be converted to minutes
         console.log(secondsTill);
         let minutesTill = Math.floor(totalTimeTill/60)%60;// find however many minutes can not be converted to hours
