@@ -35,35 +35,44 @@
         cartItemShow.innerHTML = cartItemCount;
     });
     addChicken.addEventListener("click", function (){
+        let cartTotal = total.innerText;
+        console.log(cartTotal);
         cart.push(chicken);
         cartItemCount++;
-        total.innerHTML = total + chicken.cost;
-        console.log(chicken.cost);
-        console.log("your cart has: " + cart);
+        total.innerText = (parseFloat(cartTotal) + chicken.cost).toFixed(2);
+        //addToTotal();
     });
     addWater.addEventListener("click", function (){
+        let cartTotal = total.innerText;
         cart.push(water);
         cartItemCount++;
         console.log(water.cost);
         console.log("your cart has: " + cart);
+        total.innerText = (parseFloat(cartTotal) + water.cost).toFixed(2);
     });
     addChocolate.addEventListener("click", function(){
+        let cartTotal = total.innerText;
         cart.push(chocolate);
         cartItemCount++;
         console.log(chocolate.cost);
         console.log("your cart has: " + cart);
+        total.innerText = (parseFloat(cartTotal) + chocolate.cost).toFixed(2);
     });
     addRice.addEventListener("click", function(){
+        let cartTotal = total.innerText;
        cart.push(rice);
        cartItemCount++;
        console.log(rice.cost);
        console.log("your cart has: " + cart);
+        total.innerText = (parseFloat(cartTotal) + rice.cost).toFixed(2);
     });
     addBread.addEventListener("click", function (){
+        let cartTotal = total.innerText;
         cart.push(bread);
         cartItemCount++;
         console.log(bread.cost)
         console.log("your cart has: " + cart);
+        total.innerText = (parseFloat(cartTotal) + bread.cost).toFixed(2);
     })
 
 
