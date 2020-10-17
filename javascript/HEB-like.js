@@ -1,4 +1,5 @@
 (function (){
+    // Items to buy
     let addRice = document.getElementById("add1");
     let riceCost = document.getElementById("cost1").innerHTML;
     let addBread = document.getElementById("add2");
@@ -9,13 +10,24 @@
     let waterCost = document.getElementById("cost4").innerHTML;
     let addChocolate = document.getElementById("add5");
     let chocolateCost = document.getElementById("cost5").innerHTML;
+    //Cart and shopping items
     let cartItemCount = 0;
     let cartItemShow = document.getElementById("allItems");
     let showCart = document.getElementById("showCart");
     let total = document.getElementById("yourTotal");
-    let cart = [{
+    let displayCart = document.getElementById("cartTotal");
+    //Search bar
+    let searchInput = document.getElementById("search");
+    let displaySearch = document.getElementById("whatYouSearched");
+    let search = document.getElementById("performSearch");
+    search.addEventListener("click", function (){
+        let searchResult = searchInput.value;
+        displaySearch.innerText = "Displaying results for " + searchResult;
+    });
+    displayCart.addEventListener("click", function(){
 
-    }];
+    });
+    let cart = [{}];
     let rice = {
         cost: Number(riceCost)
     }
@@ -32,59 +44,50 @@
         cost: Number(chocolateCost)
     }
     showCart.addEventListener("click", function (){
-        cartItemShow.innerHTML = cartItemCount;
+        cartItemShow.innerHTML = "Your cart has " + cartItemCount + " items in it.";
     });
-    addChicken.addEventListener("click", function (){
+
+    // adding items to the cart
+    function addToTotal(object){
         let cartTotal = total.innerText;
-        console.log(cartTotal);
-        cart.push(chicken);
+        cart.push(object);
         cartItemCount++;
-        total.innerText = (parseFloat(cartTotal) + chicken.cost).toFixed(2);
-        //addToTotal();
+        total.innerText = (parseFloat(cartTotal) + object.cost).toFixed(2);
+    }
+    // items
+    addChicken.addEventListener("click", function (){
+        addToTotal(chicken);
     });
     addWater.addEventListener("click", function (){
-        let cartTotal = total.innerText;
-        cart.push(water);
-        cartItemCount++;
-        console.log(water.cost);
-        console.log("your cart has: " + cart);
-        total.innerText = (parseFloat(cartTotal) + water.cost).toFixed(2);
+        addToTotal(water);
     });
     addChocolate.addEventListener("click", function(){
-        let cartTotal = total.innerText;
-        cart.push(chocolate);
-        cartItemCount++;
-        console.log(chocolate.cost);
-        console.log("your cart has: " + cart);
-        total.innerText = (parseFloat(cartTotal) + chocolate.cost).toFixed(2);
+        addToTotal(chocolate);
     });
     addRice.addEventListener("click", function(){
-        let cartTotal = total.innerText;
-       cart.push(rice);
-       cartItemCount++;
-       console.log(rice.cost);
-       console.log("your cart has: " + cart);
-        total.innerText = (parseFloat(cartTotal) + rice.cost).toFixed(2);
+        addToTotal(rice);
     });
     addBread.addEventListener("click", function (){
-        let cartTotal = total.innerText;
-        cart.push(bread);
-        cartItemCount++;
-        console.log(bread.cost)
-        console.log("your cart has: " + cart);
-        total.innerText = (parseFloat(cartTotal) + bread.cost).toFixed(2);
-    })
+        addToTotal(bread);
+    });
 
 
+    // log in button
     let logIn = document.getElementById("logIn");
     let haveLoggedIn = false;
-    let displayLogIn = document.getElementById("loggedIn")
+    let displayLogIn = document.getElementById("loggedIn");
+
     logIn.addEventListener("click", function(){
        haveLoggedIn = true;
+        logInToSite();
+    });
+    // have this do more later
+    function logInToSite(){
         if(haveLoggedIn){
             displayLogIn.innerHTML = "Logged In!";
         }
-    });
+    }
+    // register button
     let registered = document.getElementById("register");
     let haveRegistered = false;
     let displayRegStatus = document.getElementById("registered");
@@ -94,6 +97,7 @@
             displayRegStatus.innerHTML = "You have successfully registered";
         }
     });
+    // lists button
     let lists = document.getElementById("lists");
     let clickedLists = false;
     let displayLists = document.getElementById("clickedList");
@@ -103,6 +107,7 @@
             displayLists.innerHTML = "Showing the List";
         }
     });
+    // help button
     let help = document.getElementById("help");
     let clickedHelp = false;
     let displayHelpStatus = document.getElementById("askHelp");

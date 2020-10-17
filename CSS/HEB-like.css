@@ -4,11 +4,6 @@ body {
 .topOfSite{
     background-color: red;
     width: 100%;
-    display: flex;
-    justify-content: right;
-}
-button:hover{
-    cursor: pointer;
 }
 .upperSection{
     display: flex;
@@ -35,10 +30,19 @@ button:hover{
     background-color: aliceblue;
     transition-duration: .5s;
 }
-.addItem:hover{
+button:hover{
+    cursor: pointer;
     color: aliceblue;
     background-color: red;
     border: 2px solid yellow;
+}
+.topButtons{
+    margin: .25em;
+    border-radius: 25%;
+    border: 2px solid white;
+    color: red;
+    background-color: aliceblue;
+    transition-duration: .5s;
 }
 #item1{
     margin: 2%;
