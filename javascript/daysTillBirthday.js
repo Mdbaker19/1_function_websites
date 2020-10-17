@@ -19,6 +19,17 @@
         console.log(hoursTill);
         let daysTill = Math.floor(totalTimeTill/3600/24);// get the amount of days
         console.log(daysTill);
-        response.innerText = (daysTill + " days, " + hoursTill + " hours, " + minutesTill + " minutes, " + secondsTill + " seconds left until your birthday!");
+        response.innerText =(daysTill + " days, " + hoursTill + " hours, " + minutesTill + " minutes, " + secondsTill + " seconds left until your birthday!");
     });
+
+    let outputSpot = document.getElementById("nameSpot");
+    let inputName = document.getElementById("name");
+    let findName = document.getElementById("returnName");
+    findName.addEventListener("click", function(){
+       let yourName = inputName.value;
+       outputSpot.innerText = yourName;
+    });
+
+
+
 })();
