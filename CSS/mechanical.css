@@ -1,0 +1,59 @@
+body{
+    background-color: #515050;
+}
+.body{
+    text-align: center;
+    text-decoration: underline;
+    color: aliceblue;
+}
+#leftTopLarge{
+    margin: -1em;
+}
+#rightTopLarge{
+    margin: -1em;
+}
+.topGears{
+    display: flex;
+    justify-content: center;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+.rotate{
+    animation: rotation 6s infinite linear;
+}
+@keyframes counterRotation {
+    from{
+        transform: rotate(359deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+.counterRotate{
+    animation: counterRotation 2s infinite linear;
+}
+@keyframes rotatePartial {
+    from{
+        transform: rotate(-30deg);
+    }
+    to{
+        transform: rotate(25deg);
+    }
+}
+.lever{
+    animation: rotatePartial 4s infinite reverse;
+    margin-bottom: -3%;
+}
+.leverBase{
+    /*margin-top: -60%;*/
+}
+.siteBody{
+    display: flex;
+    justify-content: center;
+}
