@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #5a5656;
+}
+.topOfSite{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e80a0a;
+}
+.topButtons{
+    padding: .5em;
+    background-color: #e80a0a;
+    border: none;
+    color: white;
+}
+.headerButtons{
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
