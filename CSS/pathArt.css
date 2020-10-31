@@ -1,0 +1,11 @@
+#art{
+    margin: 2.5vh 2.5vw;
+    background-color: #060505;
+    border: 1vh solid #dfdffc;
+    border-radius: 5px;
+    width: 93vw;
+    height: 93vh;
+}
+body{
+    background-color: #646465;
+}
