@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+#canvas{
+    border: 5px solid #24425c;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#ranColor{
+    background-color: palevioletred;
+    color: #0c3b41;
+}
